@@ -1,0 +1,49 @@
+# Godot 4
+.godot/
+*.translation
+export_credentials.cfg
+.mono/
+data_*/
+mono_crash.*.json
+
+# Build / export output
+build/
+exports/
+dist/
+*.pck
+*.exe
+*.x86_64
+*.dmg
+*.app/
+
+# Test reports
+reports/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+steam_appid.txt
+*.vdf
+config.local.*
+
+# Art source scratch files
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

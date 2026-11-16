@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://src/main/main.gd" id="1_main"]
+
+[sub_resource type="StandardMaterial3D" id="mat_ground"]
+albedo_color = Color(0.36, 0.55, 0.3, 1)
+
+[sub_resource type="CylinderMesh" id="mesh_ground"]
+material = SubResource("mat_ground")
+top_radius = 20.0
+bottom_radius = 18.0
+height = 1.0
+radial_segments = 12
+
+[sub_resource type="StandardMaterial3D" id="mat_wall"]
+albedo_color = Color(0.85, 0.78, 0.6, 1)
+
+[sub_resource type="BoxMesh" id="mesh_wall"]
+material = SubResource("mat_wall")
+size = Vector3(4, 2.5, 4)
+
+[sub_resource type="StandardMaterial3D" id="mat_roof"]
+albedo_color = Color(0.7, 0.27, 0.17, 1)
+
+[sub_resource type="PrismMesh" id="mesh_roof"]
+material = SubResource("mat_roof")
+size = Vector3(4.6, 2, 4.6)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, -0.354, 0.354, 0, 0.707, 0.707, -0.5, -0.612, 0.612, 0, 10, 0)
+shadow_enabled = true
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.643, 0.766, 0, -0.766, 0.643, 0, 20, 17)
+fov = 45.0
+
+[node name="Island" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("mesh_ground")
+
+[node name="TownCenter" type="Node3D" parent="."]
+
+[node name="Walls" type="MeshInstance3D" parent="TownCenter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
+mesh = SubResource("mesh_wall")
+
+[node name="Roof" type="MeshInstance3D" parent="TownCenter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+mesh = SubResource("mesh_roof")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="VersionLabel" type="Label" parent="UI"]
+unique_name_in_owner = true
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 300.0
+offset_bottom = 34.0
+text = "Town Life"
