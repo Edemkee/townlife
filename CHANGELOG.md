@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.1 - 2026-11-16
+### Changed
+- Game design document: settled hero origin, growth and death, bounty choice, parties, hero spending, town defence, difficulty modes, lose conditions and campaign carry-over
+- Plan items updated to match the design decisions
+
 ## v0.1.0 - 2026-11-16
 ### Added
 - Godot 4.7 project with a placeholder boot scene: island, stand-in town center, version label
