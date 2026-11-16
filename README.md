@@ -13,7 +13,7 @@ Status: early setup (see [PLAN.md](PLAN.md) and [CHANGELOG.md](CHANGELOG.md)). T
 | Art | Low-poly 3D, glTF (`.glb`) models |
 | Tests | GdUnit4 (vendored in `addons/gdUnit4`), run headless |
 | CI | GitHub Actions: tests on every PR, automatic version tags on `main` |
-| Steam | GodotSteam GDExtension (planned, milestone 0.11) |
+| Steam | GodotSteam GDExtension (planned, milestone M11) |
 
 The reasons behind each choice are logged in [CLAUDE.md](CLAUDE.md).
 
@@ -50,12 +50,12 @@ addons/     third-party Godot plugins
 
 ## Documents
 
-- [PLAN.md](PLAN.md): todos, ideas and their state
-- [GAME_DESIGN_DOCUMENT.md](GAME_DESIGN_DOCUMENT.md): vision, core loop, design decisions
-- [ARCHITECTURE.md](ARCHITECTURE.md): system structure
-- [FEATURES.md](FEATURES.md): features and their test coverage
+- [CLAUDE.md](CLAUDE.md): how to work in this repository; start here
+- [PLAN.md](PLAN.md): tasks with specs, in order
+- [GAME_DESIGN_DOCUMENT.md](GAME_DESIGN_DOCUMENT.md): game rules with IDs and statuses, tunable values, open questions
+- [ARCHITECTURE.md](ARCHITECTURE.md): layers, rules and target structure
+- [FEATURES.md](FEATURES.md): feature registry and test coverage
 - [CHANGELOG.md](CHANGELOG.md): what changed in each version
-- [CLAUDE.md](CLAUDE.md): operative decisions
 
 ## Versioning
 
