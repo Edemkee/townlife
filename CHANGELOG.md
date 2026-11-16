@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2 - 2026-11-16
+### Added
+- Game design document: design risks, 17 proposals awaiting decision and the questions the prototype gate must answer
+- Plan items annotated with the proposals that would become part of them
+
 ## v0.1.1 - 2026-11-16
 ### Changed
 - Game design document: settled hero origin, growth and death, bounty choice, parties, hero spending, town defence, difficulty modes, lose conditions and campaign carry-over

@@ -81,6 +81,52 @@ Mouse and keyboard: camera pan, zoom and rotate; click to select; build menu; bo
 - UI theme: royal decrees on parchment for kingdom demands; a bounty board as the central panel.
 - Audio: open.
 
+## Proposals awaiting decision
+
+From the brainstorm of 2026-11-16. None of these is decided. Each names the plan item it would become part of.
+
+### Design risks they answer
+
+| Risk | Why it matters | Proposals |
+|---|---|---|
+| "Why won't anyone take my bounty?" | Unexplained hero behaviour is the classic frustration of indirect control | P2 |
+| Gold is the only lever | The game collapses into "raise the price until it works" | P3, P4, P8 |
+| Waiting with nothing to do | Posting a bounty and watching can be passive | P1, P6, P14 |
+| Two games bolted together | Worker economy and hero adventure must depend on each other | P6, P7 |
+| Death by AI stupidity | Permanent death only feels fair if it follows from the player's own risk decision | P2, P4, P5 |
+| Death spiral | All heroes dead means nobody takes bounties | P9 |
+| Gold flood late in a level | Shop income feeds bounties, which feed shop income | Tribute is the main sink; P6 |
+| Art workload for one developer | Skeletal animation for many characters is the bottleneck | P12 |
+
+### Proposals
+
+| # | Proposal | Plan item |
+|---|---|---|
+| P1 | **The royal ship as the level's heartbeat.** It returns every few minutes to collect tribute, deliver the next decree and bring new wandering heroes. A visible countdown paces the level. In easy mode it only delivers; in challenge mode missed tribute costs favour. | 7, 12 |
+| P2 | **Explain-why interface.** While setting a bounty's price, hero portraits light up as the reward becomes attractive to them. Each uninterested hero shows a reason: too dangerous, too far, pays too little, not my kind of work. Every hero shows what they are doing and why. Treated as a core feature, not polish. | 7 |
+| P3 | **Scouting as a second lever.** Unscouted targets have unknown danger. Cautious heroes avoid them and reckless ones misjudge them. Explore bounties reveal the real danger, so the cycle becomes scout, assess, price, prepare. | 7, 10 |
+| P4 | **Overpaying is dangerous.** A huge reward tempts greedy low-level heroes into fights they cannot win. The right price matters, not just a high one. | 7 |
+| P5 | **Downed before dead.** A defeated hero is downed for a short time before dying for good. The player can post a rescue bounty and hope someone arrives in time. | 7, 9 |
+| P6 | **Shops need stock.** The blacksmith needs iron to sell better weapons, the apothecary needs herbs for potions. Worker output sets how strong heroes can become, which ties the two halves of the game together. | 6, 11 |
+| P7 | **Workers are assigned, not commanded.** The player sets how many workers each job or building gets, instead of ordering individuals. Keeps attention free for bounties and fits the governor role. | 6 |
+| P8 | **Upgrades sharpen control.** Town upgrades unlock finer bounty terms (minimum hero rank, shared or winner-takes-all rewards) and larger parties (a tavern upgrade raises party size). The player's indirect control improves as the town grows. | 9, 11 |
+| P9 | **Retention instead of wages.** Heroes cost nothing while idle, but bored heroes leave on the next ship. The total gold on the bounty board attracts stronger newcomers, which is the paid way out of a death spiral. | 7 |
+| P10 | **Idle heroes have a life.** With no appealing bounty they train, shop, rest, hunt weak monsters or wander off on their own, and sometimes cause trouble, such as a rogue opening a tomb early. | 9 |
+| P11 | **Spells as set pieces.** A wizard channels a ritual at a site for some time while monsters converge, so warriors and priests are needed to hold them off. The player can only prepare and price it. | 10 |
+| P12 | **Tabletop diorama look.** Islands look like game-table dioramas and heroes like painted miniatures that hop, lunge and tip over through code-driven motion, with no skeletal animation. Fits the class-based fantasy theme and removes the largest art cost. | 3, 13 |
+| P13 | **Two contrasting classes in the prototype.** Warrior (drawn to fights) and rogue (drawn to gold) from the start, because pricing is only interesting when heroes want different things. | 7, 8 |
+| P14 | **Pause and speed controls.** Pause, 1x, 2x, 3x, with building and bounty posting allowed while paused. | 5 |
+| P15 | **One new mechanic per island.** Each campaign level introduces one class, bounty type or hazard, so the campaign doubles as the tutorial. | 12 |
+| P16 | **Favour as currency.** In challenge mode, favour can be spent on kingdom aid (supplies, a royal champion on the next ship), trading safety margin for help. | 12 |
+| P17 | **Named heroes with traits and a chronicle.** Traits such as greedy, brave, cautious or pious set the personality weights. A log records each hero's deeds and a graveyard remembers the dead, which gives the veteran pick between islands its weight. | 7, 9 |
+
+### Questions the prototype gate must answer
+
+1. Is setting a price and watching who bites fun on its own?
+2. Can a player tell why a hero refused a bounty?
+3. Is there a meaningful decision at least every 30 seconds at normal speed?
+4. When a hero dies, does it feel like the player's risk rather than the AI's mistake?
+
 ## Open questions
 
 1. Which resources exist, and which are paid as tribute?
@@ -88,6 +134,7 @@ Mouse and keyboard: camera pan, zoom and rotate; click to select; build menu; bo
 3. How many veteran heroes carry over, and do they keep their gear?
 4. Controller support for Steam Deck?
 5. Audio direction.
+6. Which of the proposals above to adopt.
 
 ## Design decision log
 
