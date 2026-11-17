@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.4 - 2026-11-17
+### Changed
+- PLAN.md: milestones renamed M1 to M12; items 3 to 8 split into 20 pull-request-sized tasks with dependencies, files and "Done when" conditions
+- GAME_DESIGN_DOCUMENT.md: every rule has a stable ID and a status (DECIDED, ASSUMED, PROPOSED, OPEN); added design pillars, glossary, tunable values, the prototype level flow and what each open question blocks
+- ARCHITECTURE.md: layer rules A1 to A12, target directory structure, tick order, naming and testing approach
+- FEATURES.md: feature registry with IDs, a template, and CI as a feature
+- CLAUDE.md: session start steps, commands, rules for every change, definition of done and known pitfalls, ahead of the decision log
+
 ## v0.1.3 - 2026-11-16
 ### Changed
 - Game design document: adopted the royal ship, tabletop diorama look, assigned workers, downed heroes with field revival and infirmary rescue, hero perks, and warrior plus rogue in the prototype
